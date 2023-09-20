@@ -1,0 +1,373 @@
+body {
+  margin: 0;
+  font-family: "Montserrat";
+  color: #000000;
+  display: flex;
+  background-image: url(/img/white-paper-texture.jpg);
+  flex-direction: column;
+}
+.container {
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1120px;
+}
+.navbar__wrap .menu > li > a:hover {
+  color: #dc879c;
+}
+.header_container {
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1120px;
+}
+
+.account {
+  cursor: pointer;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+}
+/*---------*/
+
+.navbar__wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.menu_burger {
+  display: none;
+}
+
+.popup {
+  display: none;
+}
+
+.logo {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.menu > li > a {
+  text-decoration: none;
+}
+
+.navbar__wrap .menu {
+  display: flex;
+}
+
+.navbar__wrap .menu > li {
+  display: flex;
+  align-items: stretch;
+}
+
+.navbar__wrap .menu > li > a {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar__wrap .menu > li > a:hover {
+  color:#dc879c;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  background-color: white;
+}
+.container_footer {
+  display: flex;
+  width: 100%;
+  margin-left: 150px;
+  margin-right: 150px;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: fit-content;
+  margin-top: 30px;
+  max-width: 1120px;
+}
+
+.icons {
+  width: 29%;
+}
+.icons:hover path {
+  stroke: #dc879c;
+  cursor: pointer;
+  fill: none;
+}
+
+.reverse_first {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reverse_first {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.reverse_second {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 10%;
+}
+.tn_container {
+  top: 100px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.title_ {
+  display: flex;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #000000;
+}
+p {
+  margin: 0;
+}
+.navigate {
+  /* margin-top: 50px; */
+  margin-bottom: 14px;
+  display: flex;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+
+  color: #a7a7a7;
+}
+input {
+  outline: none;
+}
+@media (min-width: 1500px) {
+  .container,
+  .header_container {
+    margin: 0px auto;
+  }
+  .container_footer {
+    margin: 20px auto 0px auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container_footer {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 1000px) {
+  .navbar__wrap .menu {
+    display: none;
+  }
+  .icon {
+    display: none;
+  }
+  .container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .header_container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .menu_burger {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu_burger__field {
+    padding: 10px 0px 10px 10px;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #000000;
+    transition: 0.2s;
+  }
+
+  .popup {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #828282c3;
+    z-index: 100;
+    display: flex;
+    transition: 0.3s;
+  }
+
+  .popup.open {
+    left: 0;
+  }
+
+  .popup .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 50px 0;
+    overflow: auto;
+  }
+
+  .popup .menu > li {
+    width: 100%;
+    margin: 0;
+  }
+
+  .popup .menu > li > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: normal;
+    color: #ffffff;
+  }
+
+  .popup .menu > li > a:hover {
+    background-color: rgba(122, 82, 179, 0.1);
+  }
+
+  .menu_burger__field.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu_burger__field.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .menu_burger__field.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  body.noscroll {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 800px) {
+  .container_footer {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .reverse_second {
+    flex-direction: column;
+    width: fit-content;
+  }
+  .icons {
+    width: 10%;
+  }
+  .footer {
+    height: 180px;
+  }
+  .container_footer {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .header_container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .container_footer {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .container_footer {
+    font-size: 12px;
+  }
+  .title_ {
+    font-size: 20px;
+  }
+}
+
+/*----------*/
+.menu_items {
+  display: flex;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.header {
+  display: flex;
+  width: 100%;
+  padding-top: 7px;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 100;
+}
+.logo {
+  height: 50px;
+  width: auto;
+}
+.sub_menu {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+li {
+  margin-right: 20px;
+}
+p {
+  margin: 0;
+}
+.icon {
+  width: 24px;
+  height: auto;
+}
+.icon_р {
+  width: 24px;
+  height: auto;
+}
+.display {
+  display: none;
+}

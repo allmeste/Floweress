@@ -1,0 +1,125 @@
+
+.item_photo{
+    width: 320px;
+}
+.name_price{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #DC879C;
+    font-size: 12px;
+}
+.card{
+    margin-bottom: 50px;
+    width: fit-content;
+    margin-right: 15px;
+    color: #000;
+}
+.catalog_cards{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 70%; */
+    justify-content: space-between;
+    max-width: 770px;
+}
+.catalog_container{
+    display: flex;
+    top: 100px;
+    position: relative;
+    /* width: 100%; */
+    flex-direction: row !important;
+    justify-content: space-between;
+}
+.filter_container{
+    /* margin-top: 79px; */
+    width: fit-content;
+    margin-left: 20px;
+    min-width: 150px;
+}
+.icon_{
+    width: 15%;
+}
+.filter_icon_container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.constructor{
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+.catalog{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 150px;
+    justify-content: space-between;
+    width: 100%;
+}
+@media (max-width: 1200px) {
+    .item_photo{
+        width: 250px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .item_photo{
+        width: 290px;
+    }
+}
+@media (max-width: 1050px) {
+    .item_photo{
+        width: 240px;
+    }
+}
+@media (max-width: 1010px) {
+    .item_photo{
+        width: 220px;
+    }
+}
+@media (max-width: 1000px) {
+    .item_photo{
+        width: 250px;
+    }
+}
+@media (max-width: 860px) {
+    .item_photo{
+        width: 330px;
+    }
+    .name_price{
+        font-size: 16px;
+    }
+    .constructor{
+        margin-top: 150px;
+    }
+    .tn_container{
+
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 490px) {
+    .item_photo{
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 391px) {
+
+.constructor,.name_price,.filter_container {
+    font-size: 12px;
+  }
+  .filter_container{
+    margin-left: 0;
+  } 
+body{
+    overflow-x: hidden;
+}
+
+}
+
+
+

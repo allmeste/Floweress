@@ -1,0 +1,85 @@
+.background {
+  height: 100%;
+  margin-top: 100px;
+}
+
+.contact_container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.contact_title {
+  display: flex;
+  width: 100%;
+  font-weight: 1000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contact_text {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-right: 40px;
+}
+.blog_container::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+.blog_container::-webkit-scrollbar-track {
+  background: rgb(234, 234, 234);
+  border-radius: 5px;
+}
+.blog_container::-webkit-scrollbar-thumb {
+  background-color: #DC879C;
+  border-radius: 5px;
+
+}
+.text {
+  margin-top: 150px;
+}
+.about {
+  display: none;
+}
+iframe {
+  width: 100%;
+}
+.map {
+  width: 40%;
+}
+@media (max-width: 850px) {
+  .background {
+    display: none;
+  }
+  .about {
+    display: block;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .contact_text {
+    margin-bottom: 20px;
+  }
+  .map {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .contact {
+    font-size: 12px;
+  }
+  .text {
+    font-size: 12px;
+  }
+
+  .text {
+    margin-top: 130px;
+  }
+  .contact_container {
+    margin-top: 20px;
+  }
+}

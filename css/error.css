@@ -1,0 +1,79 @@
+.branch1_img {
+    width: 30%;
+    height: auto;
+  }
+  .branch1 {
+    display: flex;
+    margin-top: 0px;
+    z-index: 1;
+  }
+  .branch2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px;
+    z-index: 1;
+  }
+  .branch2_img {
+    width: 30%;
+    height: auto;
+  }
+  .error{
+    display: flex;
+    align-items: center;
+  }
+  .number{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 200px;
+line-height: 244px;
+color: #000000;
+  }
+  .error_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15% ;
+    margin-bottom: 15%;
+  }
+  .main_btn {
+    width: 183px;
+    height: 42px;
+    font-family: "Montserrat";
+    margin-top: 20px;
+    background: none;
+      border: none;
+      position: relative;
+      text-transform: uppercase;
+      font-weight: 600;
+  ;
+      cursor: pointer;
+    margin-bottom: 50px;
+    
+  }
+  .main_btn:after, .main_btn:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border: 1px solid #000;
+      transition: transform .2s;
+  }
+  .main_btn:after {
+      transform: translate(3px, 3px);
+  }
+  .main_btn:before {
+      transform: translate(-3px, -3px);
+  }
+  .main_btn:hover:after, .main_btn:hover:before {
+      transform: translate(0);
+  }
+  @media (max-width: 550px) {
+
+.number{
+    font-size: 100px;
+}
+}

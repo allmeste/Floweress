@@ -1,0 +1,182 @@
+.main_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.account_container{
+   width: 45%;
+}
+.order_scroll::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+  }
+  .order_scroll::-webkit-scrollbar-track {
+    background: rgb(234, 234, 234);
+    border-radius: 5px;
+  }
+  .order_scroll::-webkit-scrollbar-thumb {
+    background-color: #DC879C;
+    border-radius: 5px;
+  
+  }
+  .order_scroll{
+    display: flex;
+    overflow: auto;
+    width: 100%;
+    height: 450px;
+
+    max-width: 1000px;
+    flex-direction: column;
+  }
+.orders{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: -80px;
+    margin-left: 100px;
+}
+.order_background{
+
+    /* width: 100%; */
+    height: fit-content;
+    padding: 26px;
+    background: none;
+    border: 0.5px solid #000000;
+    margin-bottom: 20px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+.name{
+    margin-bottom: 30px;
+}
+.order_background p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.product{
+    margin-bottom: 50px;
+}
+.order_details{
+    display: flex;
+}
+.order_photo{
+    width: 40%;
+    height: fit-content;
+}
+.input_add{
+    display: flex;
+    height: 40px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid;
+    padding-left: 15px;
+    font-family: "Montserrat";
+font-size: 16px;
+outline: none;
+margin-bottom: 20px;
+margin-top: 30px;
+
+  }
+input::placeholder{
+font-family: "Montserrat";
+font-size: 16px;
+
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.change_info{
+width: fit-content;
+height: 27.7px;
+padding: 0px 20px 0px 20px;
+border: 0.5px solid #000000;
+margin: 10px;
+background:none;
+font-family: "Montserrat";
+cursor: pointer;
+
+}
+.change_info:hover{
+    border: 1px solid rgb(169, 169, 169);
+}
+.change_info:active{
+    box-shadow: 0px 0px 5px #585858;
+}
+.pass{
+    margin-top: 50px;
+    display: none;
+}
+.footer{
+    margin-top: 100px;
+}
+
+@media (max-width: 1200px) {
+.order_photo{
+    width: 50%;
+}
+.buttons{
+    flex-direction: column;
+}
+.orders{
+    margin-left: 50px;
+}
+.description{
+    margin-top: 0;
+}
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+}
+
+@media (max-width: 780px) {
+.main_container{
+    flex-direction: column;
+    align-items: center;
+}
+.orders{
+    margin-left: 0;
+    margin-top: 50px;
+    width: 100%;
+}
+.account_container{
+    width: 77%;
+}
+p{
+    font-size: 14px;
+}
+}
+@media (max-width: 550px) {
+.order_background{
+    padding: 15px;
+}
+.description{
+    margin-left: 30px;
+}
+}
+@media (max-width: 391px) {
+input::placeholder{
+    font-size: 12px;
+    
+    }
+.input_add{
+    margin-top: 20px;
+}
+
+}
